@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-co">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Encriptador OracleOne</title>
+    <meta name="description" content="Desafío Encriptador OracleOne">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Andres Echeverria">
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="navbar_brand" href="#">
+            <img src="./assets/logo-md.png" alt="logo" />
+        </a>
+    </header>
+    <main class="contenedor">
+        <section class="encriptador">
+            <textarea id="inputText" name="inputText"
+                placeholder="Ingresa el texto que desees encriptar o desencriptar." rows="10" cols="50"
+                required></textarea>
+            
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                    <path fill="gray" fill-rule="evenodd"
+                        d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14M8 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4m0 8a1 1 0 1 0 0-2a1 1 0 0 0 0 2"
+                        clip-rule="evenodd" />
+                </svg>
+                Solo letras minúsculas y sin acentos (300 letras máx).
+            </p>
+
+            <button onclick="encriptarTexto();" class="button button_dark_blue" name="encriptar" type="button">
+                Encriptar
+            </button>
+            <button onclick="desencriptarTexto();" class="button button_light_blue" name="desencriptar" type="button">
+                Desencriptar
+            </button>
+        </section>
+        <section class="resultado">
+            <p class="" id="outputText">Texto resultado</p>
+            <button onclick="copiarTexto();" class="button button_light_blue" id="copyButton" name="desencriptar" type="button" style="display: none">
+                Copiar
+            </button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Andrés Echeverría</p>
+        <p>&copy; 2024 Fordragon Dev Company.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
